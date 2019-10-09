@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">search-module</th></tr>
+<tr><td><a href="#t0">search-test-java</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">38,692</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">search-test-qa</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">35,354</td><td></td><td></td></tr>
+<tr><td><a href="#t2">search-test-webdriver</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">34,847</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">search-test-docker</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">34,855</td><td></td><td></td></tr>
+<tr><td><a href="#t4">search-test-jenkins</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">34,573</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num attn">5</th><th class="num">178,321</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">search-module</th></tr></tbody><tbody id="t0"><tr><th colspan="4">search-test-java &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.searchmodule.tests.SearchTest</td><td><a href="#m0">search</a></td><td rowspan="1">1570027829015</td><td rowspan="1">33316</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">search-test-qa &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.searchmodule.tests.SearchTest</td><td><a href="#m1">search</a></td><td rowspan="1">1570027864430</td><td rowspan="1">33405</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">search-test-webdriver &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.searchmodule.tests.SearchTest</td><td><a href="#m2">search</a></td><td rowspan="1">1570027899265</td><td rowspan="1">33488</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">search-test-docker &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.searchmodule.tests.SearchTest</td><td><a href="#m3">search</a></td><td rowspan="1">1570027934237</td><td rowspan="1">33460</td></tr></tbody>
+<tbody id="t4"><tr><th colspan="4">search-test-jenkins &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.searchmodule.tests.SearchTest</td><td><a href="#m4">search</a></td><td rowspan="1">1570027969097</td><td rowspan="1">33247</td></tr></tbody>
+</table>
+<h2>search-test-java</h2><h3 id="m0">com.searchmodule.tests.SearchTest#search</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>java</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[RemoteWebDriver: chrome on LINUX (8745a1daf4313d39ec5faf201f794693)] -&gt; name: q] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;f6ab2e86cbd3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.9.184-linuxkit&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600233 (523efee95e3d68..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:42181}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true, webdriver.remote.sessionid: 8745a1daf4313d39ec5faf201f7...}
+Session ID: 8745a1daf4313d39ec5faf201f794693
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.searchmodules.pages.SearchPage.doSearch(SearchPage.java:43)
+	at com.searchmodule.tests.SearchTest.search(SearchTest.java:20)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>search-test-qa</h2><h3 id="m1">com.searchmodule.tests.SearchTest#search</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>qa</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[RemoteWebDriver: chrome on LINUX (610c2c2b118eaaa5a2d6aad644d61e31)] -&gt; name: q] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;f6ab2e86cbd3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.9.184-linuxkit&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600233 (523efee95e3d68..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:44829}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true, webdriver.remote.sessionid: 610c2c2b118eaaa5a2d6aad644d...}
+Session ID: 610c2c2b118eaaa5a2d6aad644d61e31
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.searchmodules.pages.SearchPage.doSearch(SearchPage.java:43)
+	at com.searchmodule.tests.SearchTest.search(SearchTest.java:20)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>search-test-webdriver</h2><h3 id="m2">com.searchmodule.tests.SearchTest#search</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>webdriver</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[RemoteWebDriver: chrome on LINUX (7fa3a105a62cc3b63cf91ea0f0d64527)] -&gt; name: q] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;f6ab2e86cbd3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.9.184-linuxkit&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600233 (523efee95e3d68..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:39123}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true, webdriver.remote.sessionid: 7fa3a105a62cc3b63cf91ea0f0d...}
+Session ID: 7fa3a105a62cc3b63cf91ea0f0d64527
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.searchmodules.pages.SearchPage.doSearch(SearchPage.java:43)
+	at com.searchmodule.tests.SearchTest.search(SearchTest.java:20)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>search-test-docker</h2><h3 id="m3">com.searchmodule.tests.SearchTest#search</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>docker</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[RemoteWebDriver: chrome on LINUX (0b45783ae0ecfe178b62a5f4c8dca543)] -&gt; name: q] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;f6ab2e86cbd3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.9.184-linuxkit&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600233 (523efee95e3d68..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:41323}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true, webdriver.remote.sessionid: 0b45783ae0ecfe178b62a5f4c8d...}
+Session ID: 0b45783ae0ecfe178b62a5f4c8dca543
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.searchmodules.pages.SearchPage.doSearch(SearchPage.java:43)
+	at com.searchmodule.tests.SearchTest.search(SearchTest.java:20)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>search-test-jenkins</h2><h3 id="m4">com.searchmodule.tests.SearchTest#search</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>jenkins</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[RemoteWebDriver: chrome on LINUX (159cdc0b100efc7888a9310f53008dc2)] -&gt; name: q] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;f6ab2e86cbd3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.9.184-linuxkit&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600233 (523efee95e3d68..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:43451}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true, webdriver.remote.sessionid: 159cdc0b100efc7888a9310f530...}
+Session ID: 159cdc0b100efc7888a9310f53008dc2
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.searchmodules.pages.SearchPage.doSearch(SearchPage.java:43)
+	at com.searchmodule.tests.SearchTest.search(SearchTest.java:20)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
